@@ -1,0 +1,95 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    transform: translateX(300px);
+    animation: fadeIn .4s forwards;
+}
+@keyframes fadeIn {
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.sidebar{
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+    border: 2px solid #4f4ff4;
+}
+.sidebarBx select{
+    border: none;
+    padding: 10px 5px;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 100%;
+}
+.sidebarBx select option{
+    color: #000;
+    cursor: pointer;
+}
+.boxCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(209px,212px));
+    grid-gap: 20px;
+    color: #fff;
+}
+.boxItem{
+    cursor: pointer;
+}
+.boxItemImg{
+    max-width: 100%;
+}
+.boxItemName{
+    margin: 0;
+    font-size: 21px;
+}
+.boxItemSubName{
+    margin: 0;
+    margin-top: 10px;
+}
+@media screen and (max-width: 991px) {
+    /* стили для больших планшетов - начало */
+
+}
+
+@media screen and (max-width: 767px) {
+    /* стили для средних планшетов - начало */
+    .wrapper{
+        grid-template-columns: 2fr 4fr;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* стили для телефонов - начало */
+    .wrapper{
+        grid-template-columns: 2fr 3fr;
+    }
+    .boxCards{
+        grid-template-columns: repeat(auto-fill, minmax(182px,231px));
+    }
+}
+@media screen and (max-width: 397px) {
+    /* стили для телефонов - начало */
+    .wrapper{
+        grid-template-columns: auto;
+    }
+    .sidebar{
+        margin: 0;
+    }
+    .boxCards{
+        grid-template-columns: repeat(auto-fill, minmax(182px,231px));
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+

@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border: 2px solid #4f4ff4;
+}
+.navbar.navbarM{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.navbar button{
+    background-color: #4f4ff4;
+    font-size: 19px;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .4s;
+}
+.navbar button:hover{
+    background-color: #3a3ac4;
+}

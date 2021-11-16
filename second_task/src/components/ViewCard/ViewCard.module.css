@@ -1,0 +1,55 @@
+.card{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 30px;
+}
+.cardBoxImg{
+    max-width: 100%;
+}
+.cardBox{
+    color: #fff;
+}
+.cardBox p{
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+.cardBox p:nth-child(1){
+    font-size: 29px;
+}
+
+.cardBox p span{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    margin-right: 7px;
+}
+@media screen and (max-width: 991px) {
+    /* стили для больших планшетов - начало */
+    .cardBox{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* стили для средних планшетов - начало */
+    .card{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* стили для телефонов - начало */
+    .card{
+        grid-template-columns: auto;
+    }
+    .cardBox:first-child{
+        grid-row: 2;
+    }
+}
+@media screen and (max-width: 397px) {
+    /* стили для телефонов - начало */
+
+}

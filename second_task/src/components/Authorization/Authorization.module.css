@@ -1,0 +1,124 @@
+.auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4f4ff4;
+    border-radius: 6px;
+    padding: 10px 70px;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 30px;
+}
+.auth h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.inputBx{
+    padding: 15px 0;
+    padding-top: 0;
+    position: relative;
+}
+.inputBx input{
+    position: relative;
+    font-size: 19px;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 300px;
+    transition: .2s ease-in-out;
+}
+.inputBx input:focus{
+    border-bottom: 1px solid #4f4ff4;
+}
+.inputBx input::placeholder{
+    font-size: 16px;
+}
+.inputBx label{
+    position: absolute;
+}
+.buttonBx{
+    text-align: right;
+}
+.buttonBx button{
+    background-color: #4f4ff4;
+    font-size: 19px;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.buttonBx button:disabled{
+    cursor: not-allowed;
+}
+.errorBxIcon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(50%);
+    width: 20px;
+    height: 20px;
+    background-color: #e32424;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.errorBx.active .errorBxIcon{
+    display: flex;
+}
+.errorBxIcon:hover + .errorBxMessage{
+    opacity: 1;
+    pointer-events: auto;
+}
+.errorBxMessage{
+    display: block;
+    position: absolute;
+    right:calc(-100% - 10px);
+    top: 0;
+    transform: translateY(10%);
+    background-color: #e32424;
+    padding: 5px 10px;
+    transition: .4s;
+    opacity: 0;
+    pointer-events: none;
+}
+.confirm{
+    transform: translateX(300px);
+    animation: fadeIn .4s forwards;
+}
+@keyframes fadeIn {
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* стили для больших планшетов - начало */
+
+}
+
+@media screen and (max-width: 767px) {
+    /* стили для средних планшетов - начало */
+
+}
+
+@media screen and (max-width: 479px) {
+    /* стили для телефонов - начало */
+    .auth h1{
+        font-size: 36px;
+    }
+    .auth{
+        padding: 10px 33px;
+    }
+    .inputBx input{
+        width: 232px;
+    }
+}
