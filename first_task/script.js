@@ -10,7 +10,7 @@ const getObjectProperty = (obj, path, defaultValue = undefined) => {
        error = undefined; //в случае отсутсвия свойства
     }
   });
-  return error == undefined ? defaultValue : resultObj;
+  return error === undefined ? defaultValue : resultObj;
 }
 const obj = {
   'pupa': {
